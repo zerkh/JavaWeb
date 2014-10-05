@@ -1,0 +1,41 @@
+/*
+常用的CSS属性列表
+color
+background-color
+background-image
+font-family:字体
+font-size
+list:列表样式
+cursor:指针样式
+border:边框样式
+padding:元素的外补白
+margin:元素的外边距
+*/
+
+p
+{
+    font-family: "黑体";
+    font-size: 30px;
+    font-style: italic;
+    font-weight: bolder;
+    color: red;
+    text-decoration: underline;
+}
+
+.mm
+{
+    background-color :red;
+    color: blue;
+    width: 200px;
+    height: 100px;
+    float: left;
+}
+
+.nn
+{
+    background-color: #333333;
+    color: #000000;
+    width: 200px;
+    height: 100px;
+    float: right;
+}

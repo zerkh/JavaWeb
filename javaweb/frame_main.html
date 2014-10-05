@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta context="charset=utf-8">
+    <!--
+	框架
+	框架组标记:
+	rows 
+	cols
+	border 边框宽度
+	bordercolor 边框颜色
+	frameborder 设置有无边框
+	framespacing 设置各窗口间的空白
+	框架标记:
+	src 对应的源文件
+	name 框架名
+	border 
+	bordercolor
+	frameborder
+	marginwidth 框架内容与左右边框的空白
+	marginheight 上下
+	scrolling 是否加入滚动条
+	noresize 是否允许改变窗口大小(默认允许)
+	FRAMESET与body冲突
+      -->
+  </head>
+
+  <frameset rows="*" cols="400,*" framespacing="1" frameborder="yes"
+	border="2" bordercolor="blue">
+    <frame src="1.html" name="leftframe" scrolling="yes"
+	   noresize="noresize" id="leftframe" title="leftframe"
+	   marginwidth="100" marginheight="200">
+    <frame src="2.html" name="mainframe" scrolling="no"
+	   noresize="noresize" id="mainframe" title="mainframe">
+  </frameset>
+
+  <noframe>
+    <body>
+    </body>
+  </noframe>
+</html>

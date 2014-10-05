@@ -3,6 +3,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <title> HTML 网页 </title>
+  <link href="css.css" rel="stylesheet" type="text/css">
 </head>
 
 <!--
@@ -13,7 +14,7 @@ link 未被访问的链接颜色
 vlink 已
 alink 正
 -->
-<body bgcolor="white" text="darkred">
+<body bgcolor="white">
   <p>
     <h6 align="center">第一段</h6>
     <!-- 文本文字标记 -->
@@ -67,6 +68,169 @@ alink 正
       left right center top middle bottom
     -->
   
-  <img href="">
+  <!--
+      列表
+      UL type:
+      disc circle square decimal lowewr-roman
+      OL type:
+      1 A a i I
+    -->
+
+  <ul type="disc">
+    <li>无序第一行</li>
+    <li type="circle">无序第二行</li>
+    <li type="square">无序第三行</li>
+    <li type="decimal">无序第四行</li>
+    <li type="lower-roman">无序第五行</li>
+  </ul>
+
+  <ol type="A">
+    <li>无序第一行</li>
+    <li type="1">无序第二行</li>
+    <li type="i">无序第三行</li>
+    <li type="a">无序第四行</li>
+    <li type="I">无序第五行</li>
+  </ol>
+  
+  <!-- 
+       表格
+       <CAPTION> 标题 align valign="top""bottom"
+       colspan 合并列
+       rowspan 合并行
+       scope="row/col"
+    -->
+  <table>
+    <CAPTION align="center" valign="top">表格标题</CAPTION>
+    <tr>
+      <th bgcolor="darkred" scope="col">代号</th>
+      <td bgcolor="darkred" scope="col">姓名</td>
+      <td bgcolor="darkred" scope="col">年龄</td>
+    </tr>
+    <tr>
+      <td scope="row">A</td>
+      <td align="center">丽丽</td>
+      <td align="center">20</td>
+    </tr>
+    <tr>
+      <td scope="row">B</td>
+      <td colspan="2" rowspan="4" align="center">不知道</td>
+    </tr>
+  </table>
+
+  <!--
+      name 表单名字
+      method 数据传输方式
+      action 处理表单数据的页面文件
+      enctype 传输数据的MIME类型 :application/x-www-form-urlencoded(默
+      认方式,通常与post一同使用) multipart/form-data(上传文件或图片时
+      的专用类型)
+      target 处理文件的打开方式
+    -->
+
+  <form  action="" method="post"
+      enctype="application/x-www-form-urlencoded" name="form1"
+      target="_parent" id="form1">
+  </form>
+
+  <!--
+  文本区域 
+  -->
+  <label>我们的数据
+    <textarea name="textarea" id="textarea" cols="10" rows="10">
+    </textarea>
+  </label>
+  <br>
+
+  <!--
+  按钮
+  type: 按钮类型 button submit reset
+  value: 值
+  -->
+  <label>按钮
+    <input type="reset" name="button" value="test">
+  </label>
+  <br>
+
+  <!--
+  单选框 radio 复选框checkbox
+  value 是在框上传送的数据值
+  -->
+  <form>
+    我们的数据
+    <input type="radio" name="test" value="单选">
+    我的数据
+    <input type="radio" name="test" value="多选">
+  <br>
+  </form>
+  
+  <label>我们的数据
+    <input type="checkbox" name="checkbox" value="多选">
+  </label>
+  <label>我的数据
+    <input type="checkbox" name="checkbox" value="多选">
+  </label>
+
+  <!-- 列表菜单 -->
+  <form>
+    <label>数据选择
+      <select name="11" id="11">
+	<option value="1">小暖想</option>
+	<option value="2">打算的撒</option>
+      </select>
+    </label>
+  </form>
+  
+  <!--
+  文件域
+  size: 表单上的字符宽度值
+  图像域
+  src:当图片不能显示时的显示数据
+  alt:在浏览器尚未完全读入图片时,在图片位置显示的文字
+  隐藏域
+  -->
+
+  <form>
+    <label>我的数据
+      <input type="file" name="test" size="20" maxlength="220">
+      <input type="image" name="test" src="oh my god" alt="wait a
+							   minute"
+							   align="middle"
+							   height="240"
+							   width="30">
+      <input type="hidden" name="test" value="test">
+    </label>
+    <br>
+   </form>
+
+  <!--
+  实现滚动效果
+  bgcolor 
+  direction 滚动方向
+  scrollamount 滚动距离
+  height width
+  truespeed 滚动速度
+  scrolldelay 滚动时间
+  behavior 滚动方式 : ALTERNATE 来回交替滚动 SCROLL 设置卷动 SLIDE 设
+  置滑动
+  -->
+  <marquee bgcolor="black" direction="down" scrollamount="1"
+	   height="100" width="200" truespeed="0.1" scrolldelay="10"
+	   behavior="alternate" loop="-1">
+    <font color="white"> Hello World! </font>
+  </marquee>
+
+  <!-- 
+  设置背景音乐
+  src: 背景音乐地址
+  loop: 循环次数
+  delay:播放音乐的延迟
+  volume 音量
+  balance: 左右均衡
+  -->
+  <bgsound src="http://96.0.248.211/1452849459.mp3" loop="-1"
+  delay="100" volume="100" balance="left">
+
+    <span class="mm">我会飘</span>
+    <span class="nn">我会飘</span>
 </body>
 </html>
