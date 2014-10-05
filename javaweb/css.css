@@ -20,6 +20,8 @@ p
     font-weight: bolder;
     color: red;
     text-decoration: underline;
+    padding-left: 20%;
+    text-decoration: overline;
 }
 
 .mm
@@ -28,7 +30,19 @@ p
     color: blue;
     width: 200px;
     height: 100px;
+    positon: fixed;
+    left: 50px;
+    padding-right: 10px;
+    border-right-width: 10px;
+    display: block;
+    visilibity:hidden;
+    margin-top: 20px;
+    text-align: center;
     float: left;
+    clear: both;
+    border-style:outset;
+    border-width:thick;
+    border-color:blue;
 }
 
 .nn
@@ -39,3 +53,115 @@ p
     height: 100px;
     float: right;
 }
+
+li
+{
+    list-style-position:outside;
+    list-style-type: lower-alpha;
+}
+
+/*
+  1.字体属性
+   font-family
+   font-style 字体样式 是否斜体
+   font-variant 小型大写字母的字体显示文本
+   font-weight 字体粗细
+   font-size 字体大小
+  
+  2.文本属性
+   color
+   background-color
+   background-image
+   background-repeat 设置背景图案的重复方式
+   background-attachment 设置背景图像是固定还是随其他内容滚动
+   background-position 设置背景图像的初始位置
+
+   text-align 文字对齐
+   text-indent 首行缩进
+   line-height 文本的行高
+   a:link 设置连接未访问过的状态
+   a-visted 访问过
+   a:hover 链接的鼠标激活状态
+
+3.块属性
+   margin-top 顶边距
+   margin-right 右边距
+   padding-top 顶填充距
+   padding-right 右填充距
+
+4.边框属性
+   border-top-width 顶端边框宽度
+   border-right-width 右端边框宽度
+   width 图文混排的宽度属性
+   height 图文混排的高度属性
+
+5.项目符号和编号属性
+   display 是否显示符号
+   white-space 空白部分的处理方式
+
+6.层属性
+   absolute 绝对定位
+   relative 相对定位
+   static   无特殊定位
+
+定位属性
+1.定位模式(position属性)
+static: 普通方式
+relative: 保持原来大小偏移一段距离
+absolute: 从页面元素中独立出来,用边偏移来定位
+fixed: 从页面元素中独立出来,其位置相对于屏幕
+2.边偏移
+top/right/bottom/left:auto/长度/百分比
+
+内容控制属性
+1.display
+block 定义元素为块对象
+inline 内联
+list-item 列表项目
+2.visibility
+visible 元素可见
+hidden 元素不可见
+collapse 隐藏表格行列
+3.居中显示属性 text-align=center
+4.边界属性
+margin
+margin-top
+margin-left
+margin-right
+margin-bottom
+
+浮动属性
+float: none/left/right
+clear:none/left/right/both
+
+列表属性
+list-style-type: disc....
+list-style-position:outside/inside(项目符号位置)
+list-style-image:url/none 用图片替代项目编号
+
+补白属性
+padding-top/bottom/left/right
+
+边框属性
+1.边框样式属性 border-style
+none
+dotted 点
+solid 实线
+groove 3D凹槽
+inset 3D凹边
+hidden 隐藏
+dashed 虚线
+double 双线
+ridge 菱形
+outset 3D凸边
+2.border-width
+medium
+thick 粗
+thin 细
+长度值
+3.border-color
+4.border-collapse:collapse(表格行列合并)/separate
+
+文本修饰
+text-decoration: none/underline/overline(上划线)/linethrough(删除线)/blink(文本闪烁)
+*/
